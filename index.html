@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+
+video {
+	background: black;
+	border: 1px solid gray;
+}
+
+#container {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+}
+
+</style>
+</head>
+
+<body>
+	<form>
+		Login: 
+		<br /> 
+		<input type="text" id="login" onkeypress="sendName(event)" /> 
+		<br /> 
+		Create Room: 
+		<br /> 
+		<input type="text" id="createroom" onkeypress="cRoom(event)" /> 
+		<br />
+		Join Room: 
+		<br /> 
+		<input type="text" id="joinroom" onkeypress="jRoom(event)" /> 
+		<br />
+		Message: 
+		<br /> 
+		<input type="text" id="message"  onkeypress = "sendMessage(event)"/>
+		<br />
+		Feedback: 
+		<br /> 
+		<input type="text" id="feedback" />
+	</form>
+
+	<title>p2p scalablePeerConnection</title>
+
+	<div id="container">
+		<video id="localVideo" width="300" height="300" autoplay></video>
+	</div>
+
+	<!--<script src="node_modules/socket.io-client/socket.io.js"></script>-->
+	<script src="adapter.js"></script>
+	<script src="bundle.js"></script>
+	<script src="client.js"></script>
+
+</body>
+</html>

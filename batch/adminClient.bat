@@ -1,0 +1,2 @@
+cd..
+node admin.js
